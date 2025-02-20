@@ -1,0 +1,589 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    color: antiquewhite;
+    background: url(img/Screenshot\ 2023-08-13\ 200628.png);
+    background-size: contain;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: absolute;
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 25px;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+
+
+}
+
+#logo img {
+    height: 56px;
+    margin: 10px 55px;
+    border: 2px solid rgb(9, 255, 255);
+    border-radius: 30px;
+}
+
+.navbar a {
+
+    display: inline-block;
+    font-size: 30px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    font-family: auto;
+    opacity: 0;
+    animation:slideTop .5s ease forwards;
+}
+
+.navbar a:hover {
+    color: rgb(0, 166, 255);
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(img/Untitled\ design.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+.home-content h3 span {
+    color: #05ff34;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content p {
+    font-size: 20px;
+    opacity: 0;
+    animation:slideLeft 1s ease forwards;
+    animation-delay:1s ;
+}
+
+.home-logo a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(2, 255, 255);
+    border-radius: 50%;
+    font-size: 25px;
+    color: rgb(2, 255, 255);
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+
+}
+
+.home-logo a :hover {
+    background: rgb(2, 255, 255);
+    color: black;
+    box-shadow: 0 0 20px rgb(2, 255, 255);
+}
+
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgb(2, 255, 255);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 5px rgb(88, 248, 99),
+        0 0 25px rgb(88, 248, 99), 0 0 50px rgb(88, 248, 99),
+        0 0 100px rgb(88, 248, 99), 0 0 200px rgb(88, 248, 99);
+}
+
+#aboutimage img {
+    height: 350px;
+    margin: 10px 55px;
+    border: 10px solid rgb(9, 255, 255);
+    border-radius: 200px;
+
+
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-text h2 {
+    font-size: 60px;
+}
+
+.about-text h2 span {
+    color: rgb(9, 255, 255);
+}
+
+.about-text h4 {
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text p {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+#services {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+}
+
+.sub-title span {
+    color: aqua;
+}
+
+.container {
+    padding: 90px;
+
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px rgb(105, 105, 240),
+        1px 1px 40px blue;
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.container1 {
+    align-items: center;
+
+}
+
+.heading1 {
+    align-items: center;
+
+}
+
+#Skills {
+    width: 100%;
+    height: auto;
+    padding: 80px 13%;
+
+
+}
+
+h3 {
+    margin: 5px;
+}
+
+.skill {
+    width: 500px;
+    margin: 50px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgb(9, 255, 255), 0 10px 10px rgb(9, 255, 255);
+
+}
+
+.skill li {
+    margin: 18px 0;
+    padding: 10px;
+}
+
+.bar {
+    background: #ecf2ff;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, .8, .25, 1);
+}
+
+.bar:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.24);
+
+}
+
+.bar span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+}
+
+.html {
+    width: 90%;
+    animation: html 3s;
+}
+
+.css {
+    width: 85%;
+    animation: html 3s;
+}
+
+.JavaScript {
+    width: 60%;
+    animation: html 3s;
+}
+
+.C-plus {
+    width: 85%;
+    animation: html 3s;
+}
+
+.Microsoft-Excel {
+    width: 50%;
+    animation: html 3s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes JavaScript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes C-plus {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes Microsoft-Excel {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+@keyframes slideRight {
+    0%{
+        transform: translatex(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideLeft {
+    0%{
+        transform: translatex(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+
+
+.Contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 13px;
+}
+
+h2 {
+    font-size: 65px;
+    line-height: 1;
+    text-align: center;
+}
+
+h2 span {
+    color: #00eeff;
+}
+
+.contact-text h4{
+    margin: 15px 0;
+    color: #ecf2ff;
+    font-size: 20px;
+    font-weight: 600px;
+    
+}
+
+ .contact-text p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 1rem;
+ }
+
+
+
+.contact-list li {
+    margin-bottom: 10px;
+    display: block;
+
+}
+
+.contact-list i {
+    display: inline-block;
+    color: #00eeff;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .40s ease;
+}
+
+.contact-list li:hover {
+    transform: scale(1.01) translateY(-5px);
+    color: #00eeff;
+}
+
+.contact-icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    animation: slideLeft is ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.contact-icons  a i:hover {
+    background: #00eeff;
+    color: black;
+    box-shadow: 0 0 20px aqua;
+
+}
+
+.contact-form form {
+    position: relative;
+    padding: auto;
+}
+
+.contact-form form input,form textarea {
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: #eff1f4;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    height:  150px;
+}
+
+.contact-form form .send {
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgb(2, 255, 255);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-form form .send:hover {
+     box-shadow: 0 0 5px rgb(88, 248, 99),
+        0 0 25px rgb(88, 248, 99), 0 0 50px rgb(88, 248, 99),
+        0 0 100px rgb(88, 248, 99), 0 0 200px rgb(88, 248, 99);
+}
+
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2,1rem;
+}
+.top i{
+    color: black;
+    background: aqua;
+    font-size: 20px;
+    padding: 10px;
+    border-radius:0.5rem ;
+}
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 9px 20px;
+}
+#project {
+    margin: 15px;
+    display: flex;
+}
+#project .box {
+    border: 2px solid rgb(68, 252, 92);
+    padding: 13px;
+    margin: -9px 12px;
+    border-radius: 28px;
+    background-color: #c6b7b7;
+    transition: background 0.5s ease 0s, transform 0.5s ease 0s;
+    box-shadow: rgb(105, 105, 240) 1px 1px 20px, #ea5e5e 1px 1px 40px;
+
+}
+#project .box img {
+    height: 224px;
+    width: 410px;
+}
+.center {
+    text-align: center;
+    color: black;
+    background-color: #c6b7b7;
+    height: 40px;
+}
+.h-secondary {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+#project .box p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
